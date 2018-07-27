@@ -9,7 +9,8 @@
     "node": "^8.11.0"
   },
   "scripts": {
-    "start": "babel-node client/index.js"
+    "relay": "relay-compiler --src ./ --schema ./server/schema.graphql",
+    "start": "babel-node index.js"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
