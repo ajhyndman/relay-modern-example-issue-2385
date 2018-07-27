@@ -1,3 +1,5 @@
+scalar ID
+
 type Query {
   shouldError(value: Boolean!): String!
 }
