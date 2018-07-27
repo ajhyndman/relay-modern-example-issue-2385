@@ -5,7 +5,9 @@
   "repository": "git@github.com:ajhyndman/relay-modern-example-issue-2385.git",
   "author": "Andrew Hyndman <ajhyndman@hotmail.com>",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-relay": "1.6.0"
+  },
   "dependencies": {
     "graphql-tools": "3.0.5",
     "relay-compiler": "1.6.0",
