@@ -1,0 +1,7 @@
+type Query {
+  shouldError(value: Boolean!): String!
+}
+
+schema {
+  query: Query
+}
