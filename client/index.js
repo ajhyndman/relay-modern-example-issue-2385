@@ -5,17 +5,18 @@ const { QueryRenderer, graphql } = require('react-relay');
 const environment = require('./environment.js');
 
 const query = graphql`
-  query relayModernExampleIssue2385Query($value: Boolean!) {
+  query clientQuery($value: Boolean!) {
     shouldError(value: $value)
   }
 `;
 
-const App = () => (
+const App = ({ triggerGraphQLError = false, triggerFetchError = false }) => (
   <QueryRenderer
     environment={environment}
     query={query}
     variables={{
-      value: false,
+      value: triggerGraphQLError,
+      triggerFetchError,
     }}
     render={({ props, error }) => {
       if (error) return <span>Error</span>;
