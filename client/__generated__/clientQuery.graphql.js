@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash 0c331eb3b7b4a9002d8b8d81b37e80df
+ * @relayHash edabe3058016ecf5a5ca40867a7ce579
  */
 
 /* eslint-disable */
@@ -9,17 +9,17 @@
 
 /*::
 import type { ConcreteRequest } from 'relay-runtime';
-export type relayModernExampleIssue2385QueryVariables = {|
+export type clientQueryVariables = {|
   value: boolean
 |};
-export type relayModernExampleIssue2385QueryResponse = {|
+export type clientQueryResponse = {|
   +shouldError: string
 |};
 */
 
 
 /*
-query relayModernExampleIssue2385Query(
+query clientQuery(
   $value: Boolean!
 ) {
   shouldError(value: $value)
@@ -54,13 +54,13 @@ v1 = [
 return {
   "kind": "Request",
   "operationKind": "query",
-  "name": "relayModernExampleIssue2385Query",
+  "name": "clientQuery",
   "id": null,
-  "text": "query relayModernExampleIssue2385Query(\n  $value: Boolean!\n) {\n  shouldError(value: $value)\n}\n",
+  "text": "query clientQuery(\n  $value: Boolean!\n) {\n  shouldError(value: $value)\n}\n",
   "metadata": {},
   "fragment": {
     "kind": "Fragment",
-    "name": "relayModernExampleIssue2385Query",
+    "name": "clientQuery",
     "type": "Query",
     "metadata": null,
     "argumentDefinitions": v0,
@@ -68,12 +68,12 @@ return {
   },
   "operation": {
     "kind": "Operation",
-    "name": "relayModernExampleIssue2385Query",
+    "name": "clientQuery",
     "argumentDefinitions": v0,
     "selections": v1
   }
 };
 })();
 // prettier-ignore
-(node/*: any*/).hash = 'd1aac31aa16cc25b56b5ec92b5a1e75d';
+(node/*: any*/).hash = 'c9cb7e1500faff76b43b5800d7b72a31';
 module.exports = node;
