@@ -1,5 +1,5 @@
 const { graphql } = require('graphql');
-const { Environment, Network, RecordSource, Store } = require('relay-runtime');
+const { Environment, Network, RecordSource, Store } = require('@ajhyndman/relay-runtime');
 
 const mockServer = require('../server/index.js');
 
