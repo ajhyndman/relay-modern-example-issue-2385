@@ -1,4 +1,7 @@
 {
+  "presets": [
+    "react"
+  ],
   "plugins": [
     "relay"
   ]
